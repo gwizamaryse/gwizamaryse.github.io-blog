@@ -1,0 +1,24 @@
+/* resizing the avatar */
+.avatar {
+    width: 25%;
+  }
+
+  /* 
+Styling for the social media block */
+.Social-media { 
+    grid-area: social-media; 
+    display: flex;
+    background-color: #D3D3D3 ;
+    opacity:0.6;
+  }
+  
+  .Social-media > div {
+    width: 100%;
+    margin: 30px;
+    padding: 50px;
+  }
+  
+  .container-author {
+    padding: 2px 16px;
+    display:flexbox;
+  }

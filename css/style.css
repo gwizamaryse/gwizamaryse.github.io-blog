@@ -1,0 +1,139 @@
+@import url("articlestyle.css");
+@import url("buttons.css");
+@import url("small.css");
+@import url("social-media.css");
+
+/* the css code below describe the structure of the grip for the whole page */
+.container {
+    display: grid;
+    overflow:auto;
+    width: 100%;
+    background-color: #F8F8F8;
+    grid-template-rows: (6,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas: 
+    "header header header header header header" 
+    "menu menu menu menu menu menu"
+    "content content content content content content" 
+    "content content content content content content" 
+    "social-media  social-media social-media social-media social-media social-media"
+    "services services services services services services" 
+    "services services services services services services" 
+    "footer footer footer footer footer footer"
+    "footer-2 footer-2 footer-2 footer-2 footer-2 footer-2";
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container> * > *{
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+    text-align: center;
+  }
+  
+ .logo {
+  background-color:#D3D3D3;
+  min-height: 200px;
+
+  }
+  /* CSS for the header */
+  .header { 
+      grid-area: header; 
+      background-color: #3399ff;
+      opacity: 80%;
+      background-image:url(images/top-image.jpg );
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 350px;
+    }
+  /* CSS for the content div, block number 2 below the header */
+  .content { 
+      grid-area: content; 
+      display  :flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content > div {
+      width: 100%;
+      margin: 10px;
+      padding: 20px;
+      align-items: center;
+    }
+  
+  /* services offered */
+  .services { 
+      display: flex;
+      grid-area: services; 
+      flex-wrap: nowrap;
+    }
+
+  .services > div {
+        background-color:#D3D3D3;
+        width:100%;
+        margin: 20px;
+        justify-content: center;
+        min-height: 100px;
+        border-radius: 8px;
+        opacity : 0.8;
+        padding: 50px;
+}
+ 
+/* styling for the footer */
+.footer { 
+      grid-area: footer; 
+      display: flex;
+      background-color: #3399ff;
+      flex: 1;
+    }
+
+.footer > div {
+      width: 100%;
+      margin: 10px;
+      padding: 30px;
+      align-items: center;
+}
+
+/* styling for the footer */
+.footer-2 {
+  grid-area: footer-2;
+  background-color: #3399ff;
+}
+
+h1{
+  color:whitesmoke;
+  text-decoration: underline;
+}
+
+.text{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #3399ff;
+}
+
+.a {
+  color: rgb(160, 28, 127);
+}
+
+.card-2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  align-items: center;
+}
+.content-2 { 
+  display: flexbox;
+  padding: 2px 16px;
+}
+
+.content-2 > div {
+    background-color: 	#D3D3D3;
+    margin: 20px;
+    justify-content: center;
+    /* line-height: 25px; */
+    min-height: 100px;
+    border-radius: 8px;
+    opacity : 0.8;
+    padding: 50px;
+}
